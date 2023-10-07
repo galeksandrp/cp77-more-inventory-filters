@@ -215,7 +215,7 @@ private final func Init() -> Void {
 
 // Add new filters to FullscreenVendorGameController
 @wrapMethod(FullscreenVendorGameController)
-private final func SetFilters(root: inkWidgetRef, data: array<Int32>, callback: CName) -> Void {
+private final func SetFilters(root: inkWidgetRef, const data: script_ref<array<Int32>>, callback: CName) -> Void {
 	// Extend player filters
 	let i: Int32;
 	if root == this.m_playerFiltersContainer {
@@ -242,7 +242,7 @@ private final func SetFilters(root: inkWidgetRef, data: array<Int32>, callback: 
 				i = 0;
 				while i < ArraySize(this.m_additionalVendorFilters) {
 					this.m_vendorFilterManager.AddFilter2(this.m_additionalVendorFilters[i]);
-					Log(">>> ADD: " + EnumInt(this.m_additionalVendorFilters[i]));
+					FTLog(">>> ADD: " + EnumInt(this.m_additionalVendorFilters[i]));
 					i += 1;
 				}
 				data = this.m_vendorFilterManager.GetIntFiltersList();
