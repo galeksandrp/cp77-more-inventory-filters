@@ -1,0 +1,19 @@
+# Icon for "Iconic" filter
+UIIcon.Filter_Iconic:
+    $base: UIIcon.Filter_AllItems
+    atlasPartName: hacking
+
+# Icon for "CraftingPart" filter
+UIIcon.Filter_CraftingPart:
+    $base: UIIcon.Filter_AllItems
+    atlasPartName: mod
+
+# Icon for "CraftingRecipe" filter
+UIIcon.Filter_CraftingRecipe:
+    $base: UIIcon.Filter_AllItems
+    atlasPartName: Techie
+
+# Icon for "Uncategorized" filter
+UIIcon.Filter_Uncategorized:
+    $base: UIIcon.Filter_AllItems
+    atlasPartName: resource_single
